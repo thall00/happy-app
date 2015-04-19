@@ -1,0 +1,19 @@
+<p>Joke setup = <%= @joke.setup %></p>
+<p>Joke punchline = <%= @joke.punchline %></p>
+
+<!-- <h1>Listing Jokes</h1> -->
+
+<table>
+  <thead>
+    <tr>
+      <th><td><%= link_to 'Pearl of Wisdom', jokes_path %></td></th>
+      <th><td><%= link_to 'Click for a Funny', jokes_path %></td></th>
+    </tr>
+  </thead>
+
+  
+</table>
+
+<br>
+
+<%= link_to 'New Joke', new_joke_path %>
