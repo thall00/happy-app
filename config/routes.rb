@@ -7,8 +7,8 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'jokes#index'
 
-  get '/jokes' => redirect('/home')
-  get '/pearls' => redirect('/home')
+  get '/jokes' => redirect('/')
+  get '/pearls' => redirect('/')
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

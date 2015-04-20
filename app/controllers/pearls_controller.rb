@@ -4,7 +4,14 @@ class PearlsController < ApplicationController
   # GET /pearls
   # GET /pearls.json
   def index
-    @pearls = Pearl.all
+    @num_pearls = Pearl.count
+    @text = ''
+    if @num_pearls == 0
+      @text = 'No pearls... yet.'
+      return @text
+    else
+    @pearl = Pearl.find(1 + rand(Pearl.count))
+    end
   end
 
   # GET /pearls/1

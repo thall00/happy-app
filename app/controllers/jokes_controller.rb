@@ -5,13 +5,14 @@ class JokesController < ApplicationController
   # GET /jokes.json
   def index
     @num_jokes = Joke.count
-    @joke = ''
+    @text = ''
     if @num_jokes == 0
-      @joke = 'No jokes... yet.'
-      puts @joke
+      @text = 'No jokes... yet.'
       return @text
+    else
+      @joke = Joke.find(1 + rand(Joke.count))
     end
-    @joke = Joke.find(1)
+
     # puts @joke.setup
     # puts @joke.punchline
   end

@@ -1,29 +1,12 @@
-<p id="notice"><%= notice %></p>
+<p><%= @num_pearls == 0 ? @text : (@pearl.quote + ' ' + @pearl.author) %></p>
 
-<h1>Listing Pearls</h1>
-
+<%= render 'buttons' %>
+<br><br><br><br>
 <table>
   <thead>
-    <tr>
-      <th>Quote</th>
-      <th>Author</th>
-      <th colspan="3"></th>
+      <th><td><%= link_to 'New Quote', new_pearl_path %></td></th>
+      <th><td><%= link_to 'New Joke', new_joke_path %></td></th>
+
     </tr>
   </thead>
-
-  <tbody>
-    <% @pearls.each do |pearl| %>
-      <tr>
-        <td><%= pearl.quote %></td>
-        <td><%= pearl.author %></td>
-        <td><%= link_to 'Show', pearl %></td>
-        <td><%= link_to 'Edit', edit_pearl_path(pearl) %></td>
-        <td><%= link_to 'Destroy', pearl, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Pearl', new_pearl_path %>
