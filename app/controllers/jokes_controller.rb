@@ -6,6 +6,7 @@ class JokesController < ApplicationController
   def index
     @num_jokes = Joke.count
     @text = ''
+
     if @num_jokes == 0
       @text = 'No jokes... yet. Click the link below to add one!'
       return @text
