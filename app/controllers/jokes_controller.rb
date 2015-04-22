@@ -7,7 +7,7 @@ class JokesController < ApplicationController
     @num_jokes = Joke.count
     @text = ''
     if @num_jokes == 0
-      @text = 'No jokes... yet.'
+      @text = 'No jokes... yet. Click the link below to add one!'
       return @text
     else
       @joke = Joke.find(1 + rand(Joke.count))

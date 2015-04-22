@@ -7,7 +7,7 @@ class PearlsController < ApplicationController
     @num_pearls = Pearl.count
     @text = ''
     if @num_pearls == 0
-      @text = 'No pearls... yet.'
+      @text = 'No quotes... yet. Click the link below to add one!'
       return @text
     else
     @pearl = Pearl.find(1 + rand(Pearl.count))
