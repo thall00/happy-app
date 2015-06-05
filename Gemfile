@@ -12,6 +12,7 @@ group :production do
   gem 'pg'
   gem 'rails_12factor'
 end
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -29,6 +30,9 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
+
+# Guard::Rake allows you to automatically run a Rake task when files are modified.
+gem 'guard'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
