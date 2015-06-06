@@ -1,4 +1,4 @@
-<p><%= @num_jokes == 0 ? @text : (@joke.setup + ' ' + @joke.punchline) %></p>
+<p class="entry-title"><%= @num_jokes == 0 ? @text : (@joke.setup + ' ' + @joke.punchline) %></p>
 
 <%= render 'buttons' %>
 <br><br><br><br>
@@ -6,7 +6,7 @@
   <thead>
       <th><td><%= link_to 'Add a Quote', new_pearl_path %></td></th>
       <th><td><%= link_to 'Add a Joke', new_joke_path %></td></th>
-
+      <!-- <button onclick="changeText()">Change Text</button> -->
     </tr>
   </thead>
 </table>

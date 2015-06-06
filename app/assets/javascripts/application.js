@@ -14,3 +14,12 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+function changeJoke(){
+  $(".entry-title").load("jokes .entry-title");
+};
+
+function changeQuote(){
+  $(".entry-title").load("pearls .entry-title");
+};

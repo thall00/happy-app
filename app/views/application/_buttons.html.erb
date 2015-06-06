@@ -1,8 +1,13 @@
 <table>
   <thead>
     <tr>
-      <th><td><%= button_to 'Pearl of Wisdom', pearls_path, :method =>:get %></td></th>
-      <th><td><%= button_to 'Click for a Funny', jokes_path, :method => :get %></td></th>
+      <!-- <th><td><%= button_to 'Pearl of Wisdom', pearls_path, :method =>:get %></td></th>
+      <th><td><%= button_to 'Click for a Funny', jokes_path, :method => :get %></td></th> -->
+      <th><button onclick="changeQuote()">Pearl of Wisdom</button></th>
+      <th><button onclick="changeJoke()">Click for a Funny</button></th>
+
+
+
     </tr>
   </thead>
 </table>
